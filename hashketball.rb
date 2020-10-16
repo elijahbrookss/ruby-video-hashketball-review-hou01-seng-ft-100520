@@ -188,6 +188,7 @@ def player_stats(player_name)
 end
 
 def big_shoe_rebounds
+<<<<<<< HEAD
   shoe_sizes = []
   team_names.each{|team|
     shoe_sizes.push(get_team(team)[:players].collect{|player| player[:shoe]})
@@ -198,5 +199,20 @@ def big_shoe_rebounds
   }
 end
 
+=======
+  largest_shoe_size = 0
+  shoe_sizes = []
+  shoe_sizes.push(team_names.each{|team|
+    get_team(team)[:players].collect{|player|
+      player[:shoe]
+    }
+  })
+  p shoe_sizes
+  
+end
+
+big_shoe_rebounds()
+
+>>>>>>> f51f1a3803f98f8a672eeaa5941de87d14adde55
 
 
